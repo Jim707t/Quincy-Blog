@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/utils/postMetaData.ts", "src/pages/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/utils/postMetaData.ts", "src/pages/index.tsx", "src/utils/sortPost.js"],
   "exclude": ["node_modules"]
 }

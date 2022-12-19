@@ -1,24 +1,49 @@
-import React from 'react'
-import CardDisplay from '../card/CardDisplay'
+import {
+  Box,
+  Heading,
+  Container,
+  Text,
+  Stack,
+  Grid,
+} from '@chakra-ui/react';
+import Card from '../card/Card'
 
-export default function Hero() {
+export default function Hero({posts, index}:{posts: any, index: number}) {
   return (
-    <div>
-    <section className=" text=black">
-      <div className="max-w-6xl mx-auto px-5 py-24 ">
-        <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-          <h1 className=" title-font mb-2 text-4xl font-extrabold leading-10 tracking-tight text-left sm:text-5xl sm:leading-none md:text-6xl"> TECH SPACE</h1>
-          <p className="lg:w-1/2 w-full leading-relaxed text-base">
-           A personal corner of internet dedicate to tech
-          </p>
-        </div>
-        <div className="flex flex-wrap -m-4">
-          
-          
-        </div>
-      </div>
-    </section>
+    <>
 
-</div>
-  )
+      <Container maxW={'3xl'}>
+        <Stack
+          as={Box}
+          textAlign={'center'}
+          spacing={{ base: 8, md: 14 }}
+          py={{ base: 20, md: 36 }}>
+          <Heading
+            fontWeight={600}
+            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            lineHeight={'110%'}>
+            A tech {" "}
+            <Text as={'span'} color={'blue.400'}>
+               space
+            </Text>
+          </Heading>
+          <Text color={'gray.500'}>
+            Find here stuff related to the world of tech and other interesting things that hipe me.
+          </Text>
+          
+        </Stack>
+        
+      </Container>
+      <Box m={'auto'}
+      alignItems={'center'}
+      justifyContent={'center'}
+      px={{sm: 5, base: 5, md: 100, xl: 190}}
+      pb={{base: 50, xl: 50}}
+      >
+      <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} gap={6}>
+        <Card key={index} posts={posts}/>
+        </Grid>
+        </Box>
+    </>
+  );
 }

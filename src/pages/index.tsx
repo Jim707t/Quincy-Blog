@@ -1,38 +1,51 @@
-import Head from 'next/head'
+import fs from 'fs'
+import path from 'path'
+import matter from  'gray-matter'
 import Hero from '../components/hero/Hero'
 import Layout from '../components/Layout'
-import fs from 'fs'
+import { sortPost } from '../utils/sortPost'
+import Head from 'next/head'
 
+export async function getStaticProps() {
+  // Read the contents of the 'content' directory
+  const files = fs.readdirSync(path.join('content'))
 
-export default function Home() {
+  // Read slug and frontmatter from the 'content' directory
+  const posts = files.map(filename => {
+    const slug = filename.replace(".md", "")
+
+    // Read the frontmatter
+    const  markdownWithMeta = fs.readFileSync(path.join("content", filename), 'utf-8')
+    
+    // Read the gray matter
+    const {data: frontmatter} = matter(markdownWithMeta);
+
+    return{
+      slug,
+      frontmatter,
+    }
+  })
+
+  return {
+    props: {
+      posts: posts.sort(sortPost)
+    },
+  }
+}
+
+export default function Home({posts, index}:{posts: any, index: number}) {
 
   return (
     <Layout>
-    <Head>
+      <Head>
         <title>Jim Quincy's website</title>
-        <meta name="description" content="Jim Quincy's website" />
+        <meta name="description" content="Jim Quincy's blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <main>
-     <Hero />
+      <Hero key={index} posts={posts} index={0} />
     </main>
     </Layout>
   )
 }
-/* 
 
-async function readMarkdownFiles(folder) {
-  try {
-    const files = await fs.readdir(folder);
-    for (const file of files) {
-      if (file.endsWith('.md')) {
-        const contents = await fs.readFile(`${folder}/${file}`, 'utf8');
-        console.log(contents);
-      }
-    }
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-readMarkdownFiles('path/to/folder'); */

@@ -1,9 +1,9 @@
 ---
+tag: "Philosophy"
 title: "What is freedom for me"
 subtitle: "Freedom is a complex and often contradictory concept."
 date: "21 Jul, 2022"
 ---
-# What is freedom for me? 
 <br>
 Freedom is a complex and often contradictory concept. On the one hand, it's the idea that we're free to do whatever we want, without interference from others or external forces. This is the kind of freedom that lets us eat ice cream for breakfast, stay up all night playing video games, or quit our boring job to travel the world. But as appealing as this notion of freedom might be, it's not without its problems.
 <br><br>
