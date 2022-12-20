@@ -1,3 +1,4 @@
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
     Badge,
     Button,
@@ -11,9 +12,16 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   
-  export default function socialProfileWithImageHorizontal() {
+  export default function PCard({posts}: {posts: any}) {
     return (
-      <Center py={6}>
+
+      <>
+      {posts.map((post: {
+        slug: any;frontmatter: any
+        }, index: number) => (
+
+
+      <Center py={6} key={index}>
         <Stack
           borderWidth="1px"
           borderRadius="lg"
@@ -28,8 +36,9 @@ import {
               objectFit="cover"
               boxSize="100%"
               src={
-                'https://geekforthewin.com/wp-content/uploads/2019/11/Best-Sci-Fi-Anime-Movies-featured.jpg'
+                post.frontmatter.cover_image
               }
+              alt={'cover'}
             />
           </Flex>
           <Stack
@@ -40,13 +49,13 @@ import {
             p={1}
             pt={2}>
             <Heading fontSize={'2xl'} fontFamily={'body'}>
-              Date
+            {post.frontmatter.title}
             </Heading>
             <Text
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
-              Just an title
+             {post.frontmatter.description}
             </Text>
             <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
               <Badge
@@ -54,7 +63,7 @@ import {
                 py={1}
                 bg={useColorModeValue('gray.50', 'gray.800')}
                 fontWeight={'400'}>
-                #tech
+                {post.frontmatter.tag}
               </Badge>
             </Stack>
   
@@ -65,19 +74,23 @@ import {
               padding={2}
               justifyContent={'space-between'}
               alignItems={'center'}>
-              <Button
+                <Button 
+                as={Link}
+                href={`/project/${post.slug}`}
+                rightIcon={<ArrowForwardIcon />}
+                w={5}
                 flex={1}
-                fontSize={'sm'}
-                rounded={'full'}
-                _focus={{
-                  bg: 'gray.200',
-                }}>
-                See more
-              </Button>
+                 colorScheme='blue' variant='outline'>
+               See more
+               </Button>
             </Stack>
           </Stack>
         </Stack>
       </Center>
-    );
-  }
+
+   ))}
+  </> 
+
+ );
+}
   

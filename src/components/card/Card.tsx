@@ -5,6 +5,7 @@ import {
   Stack,
   Link,
   useColorModeValue,
+  Button,
 } from '@chakra-ui/react';
 
 
@@ -23,6 +24,7 @@ export default function Card({posts}: {posts: any}) {
         bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'2xl'}
         rounded={'md'}
+        mb={50}
         p={6}
         overflow={'hidden'}>
         <Stack>
@@ -46,12 +48,13 @@ export default function Card({posts}: {posts: any}) {
           </Text>
         </Stack>
         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-          <Link 
+          <Button
+          as={Link}
+          href={`/blog/${post.slug}`}
             textDecoration='underline'
-          href={`/blog/${post.slug}`} 
           _hover={{
             color: 'blue.300',
-          }}>  Read More </Link>
+          }}>  Read More </Button>
         </Stack>
       </Box>
 

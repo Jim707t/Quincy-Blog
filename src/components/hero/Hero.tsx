@@ -7,6 +7,7 @@ import {
   Grid,
 } from '@chakra-ui/react';
 import Card from '../card/Card'
+import data from '../../../data/data.json'
 
 export default function Hero({posts, index}:{posts: any, index: number}) {
   return (
@@ -22,13 +23,13 @@ export default function Hero({posts, index}:{posts: any, index: number}) {
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            A tech {" "}
+            {data.home_hero.title_1} {" "}
             <Text as={'span'} color={'blue.400'}>
-               space
+            {data.home_hero.title_2}
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-            Find here stuff related to the world of tech and other interesting things that hipe me.
+          {data.home_hero.description}
           </Text>
           
         </Stack>

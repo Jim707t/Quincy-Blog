@@ -1,9 +1,39 @@
 import Head from 'next/head'
 import React from 'react'
-import PCard from '../components/card/PCard'
 import Layout from '../components/Layout'
+import Project from '../components/project/Project'
+import fs from 'fs'
+import path from 'path'
+import matter from  'gray-matter'
+import { sortPost } from '../utils/sortPost'
 
-export default function project() {
+export async function getStaticProps() {
+  // Read the contents of the 'content' directory
+  const files = fs.readdirSync(path.join('project'))
+
+  // Read slug and frontmatter from the 'content' directory
+  const posts = files.map(filename => {
+    const slug = filename.replace(".md", "")
+    const  markdownWithMeta = fs.readFileSync(path.join("project", filename), 'utf-8')
+    
+    // Read the gray matter
+    const {data: frontmatter} = matter(markdownWithMeta);
+
+    return{
+      slug,
+      frontmatter,
+    }
+  })
+
+  return {
+    props: {
+      posts: posts.sort(sortPost)
+    },
+  }
+}
+
+
+export default function project({posts, index}:{posts: any, index: number}) {
   return (
     <Layout>
     <Head>
@@ -11,16 +41,9 @@ export default function project() {
         <meta name="description" content="Jim Quincy's Project" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
-    
-    <div className="container px-6 py-10 mx-auto">
-    <h1 className=" items-center text-center text-3xl font-bold dark:text-gray-900 lg:text-4xl">Projects</h1>
-        <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-
-       <PCard />
-       </div>
-       </div>
-     
-    
+      <main>
+       <Project key={index} posts={posts} index={0} />
+      </main>
     </Layout>
   )
 }
