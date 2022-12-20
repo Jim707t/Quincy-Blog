@@ -9,9 +9,9 @@ import {
 	VisuallyHidden,
 	Image,
   } from '@chakra-ui/react';
-  import { FaGithub } from 'react-icons/fa';
-  import { useEffect, useState } from 'react';
-  import { ReactNode } from 'react';
+import { useEffect, useState } from 'react';
+import { ReactNode } from 'react';
+import { BsGithub } from 'react-icons/bs';
   
 
   
@@ -107,7 +107,7 @@ import {
                </Text>
 			  
 				<Link isExternal href='https://github.com/Jim707t'>
-				<FaGithub />
+				<BsGithub/>
 				</Link>
 			</Stack>
 		  </Container>
