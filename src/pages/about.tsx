@@ -42,7 +42,7 @@ export default function about() {
       <Text>Find me on</Text>
         <ListItem>
           <ListIcon as={BsGithub} color='blue.400' />
-            <Link color='teal.500' href='https://github.com/Jim707t' isExternal> @github <ExternalLinkIcon mx='2px' /></Link> where i share code and conribute
+            <Link color='teal.500' href='https://github.com/Jim707t' isExternal> @github <ExternalLinkIcon mx='2px' /></Link> where i share code and contribute
          </ListItem>
         <ListItem>
        <ListIcon as={BsReddit} color='blue.400' />
