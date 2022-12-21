@@ -9,7 +9,7 @@ export default function Safu({posts, index}:{posts: any, index: number}) {
       <Heading as="h1" px={{base: '30%', md: 30}} m="auto" alignContent={'center'}>
         Blog posts
       </Heading>
-      <Divider margin="5" />
+      <Divider marginTop="5" mb={10} />
       
          <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} gap={6} px={6}>
              <Card key={index} posts={posts} />

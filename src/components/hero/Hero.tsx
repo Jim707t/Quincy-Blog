@@ -5,9 +5,11 @@ import {
   Text,
   Stack,
   Grid,
+  Flex,
 } from '@chakra-ui/react';
 import Card from '../card/Card'
 import data from '../../../data/data.json'
+import { BsWifi } from 'react-icons/bs';
 
 export default function Hero({posts, index}:{posts: any, index: number}) {
   return (
@@ -35,6 +37,7 @@ export default function Hero({posts, index}:{posts: any, index: number}) {
         </Stack>
         
       </Container>
+      <Heading textAlign={'center'} pb={5}>  Lastest </Heading>
       <Box m={'auto'}
       alignItems={'center'}
       justifyContent={'center'}

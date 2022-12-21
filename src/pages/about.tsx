@@ -32,7 +32,7 @@ export default function about() {
         About me
       </Heading>
       <Divider marginTop="5" />
-      <Box margin="auto" display="flex" justifyContent="center" p={10}>
+      <Box margin="auto" display="flex" justifyContent="center" p={{base: 10, md:25}}>
       <Text>
       {data.about.text}
       </Text>
