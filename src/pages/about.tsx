@@ -23,7 +23,7 @@ export default function about() {
     <>
     <Head>
         <title>About | jimquincy.tech</title>
-        <meta name="description" content="About Jim Quincy" />
+        <meta name="description" content="I'm Jim I'm a passionate programmer by all that concerns technology, especialy the technology of decentralisation and algorithms that learn" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <Layout>
