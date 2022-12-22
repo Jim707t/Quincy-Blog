@@ -38,7 +38,7 @@ export default function project({posts, index}:{posts: any, index: number}) {
     <Layout>
     <Head>
         <title>Projects | jimquincy.tech</title>
-        <meta name="description" content="Jim Quincy's Project" />
+        <meta name="description" content="Jim Quincy's Projects page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
       <main>
