@@ -39,7 +39,7 @@ export default function Home({posts, index}:{posts: any, index: number}) {
     <Layout>
       <Head>
         <title>Jim Quincy's website</title>
-        <meta name="description" content="Jim Quincy's blog" />
+        <meta name="description" content="Tech space, find here stuff related to the world of tech and other interesting things that hipe me." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <main>
