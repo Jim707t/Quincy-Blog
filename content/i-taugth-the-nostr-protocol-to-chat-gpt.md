@@ -43,7 +43,7 @@ Remember I am alway in the same line of discussion with ChatGPT. I mean he doesn
 <img src="/assets/chatgpt-conversation-img5.png" alt="Alt Text" title="Optional Title" height="90%" width="90%">
 <img src="/assets/chatgpt-conversation-img6(1).png" alt="Alt Text" title="Optional Title" height="90%" width="90%">
 
-```python
+<pre style="max-width:800px;overflow-x:scroll">
 
 import json
 from websocket import create_connection
@@ -73,7 +73,8 @@ ws.send(json.dumps(event_data))
 
 # Close websockets connection
 ws.close()
-```
+
+</pre>
 
 <br><br>
 <img src="/assets/chatgpt-conversation-img7.png" alt="Alt Text" title="Optional Title" height="90%" width="90%">
