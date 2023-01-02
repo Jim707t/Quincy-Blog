@@ -55,8 +55,8 @@ export default function Post({frontmatter: {title, date, subtitle}, slug, conten
         <Heading as="h1" size="xl" px={{base: 4, md: 4}}>
             {title}
        </Heading>
-       <Divider marginTop="5" />
-        <Box mx={0} display="flex" justifyContent="center" p={3} 
+       <Divider marginTop="5" mb={30} />
+        <Box 
         dangerouslySetInnerHTML={{__html: marked(content)}}>
      </Box>
       </Container>

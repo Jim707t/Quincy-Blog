@@ -5,7 +5,7 @@ subtitle: "I try to explain what i learned about teleportation."
 date: "25 Jun, 2022"
 ---
 
-Sin childhood i always dreamed of being able to instantly transport myself to any location.  While teleportation may seem like something straight out of a science fiction movie, it is a concept that has been explored by physicists. There are a few fundamental principles that make true teleportation as we know it from science fiction impossible.
+Since childhood i always dreamed of being able to instantly transport myself to any location.  While teleportation may seem like something straight out of a science fiction movie, it is a concept that has been explored by physicists. There are a few fundamental principles that make true teleportation as we know it from science fiction impossible.
 <br><br>
 One of the big problem to teleportation is the speed of light. The theory of special relativity by Einstein's, say nothing can move faster than the speed of light. This means that if an object were to be teleported from an place to another, it would have to hit the speed of light to be able to reach its destination instantaneously. But as the speed of an object increases, its mass also increases, and at the speed of light, an object's mass becomes infinitely large. This makes it impossible for anything with mass to travel at the speed of light. You will say but: how do photons of light to reach the speed of light?
 The photons of lights are incredibly small and have no mass or electrical charge they are not affected by the lawof the special relativity.
