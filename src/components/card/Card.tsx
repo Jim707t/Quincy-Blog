@@ -7,9 +7,11 @@ import {
   useColorModeValue,
   Button,
 } from '@chakra-ui/react';
+import { event } from "nextjs-google-analytics";
 
 
 export default function Card({posts}: {posts: any}) {
+
   return (
         
     <>
@@ -48,16 +50,22 @@ export default function Card({posts}: {posts: any}) {
           </Text>
         </Stack>
         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-          <Button
+        <Button
           as={Link}
           href={`/blog/${post.slug}`}
             textDecoration='underline'
+            onClick={() => {
+              event("button_click", {
+                category: "Read More Button",
+                action: "Click",
+                label: "Read More button was clicked"
+              });
+            }}
           _hover={{
             color: 'blue.300',
           }}>  Read More </Button>
         </Stack>
       </Box>
-
     
      ))}
     </> 

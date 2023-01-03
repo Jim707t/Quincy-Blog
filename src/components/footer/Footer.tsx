@@ -84,7 +84,7 @@ import { BsGithub } from 'react-icons/bs';
 		  <Stack direction={'row'} spacing={6}>
 			<Link href={'/'}>Home</Link>
 			<Link href={'/about'}>About</Link>
-			<Link href={'/privacy-policy'}>Privacy & Policy</Link>
+			<Link href={'/privacy-&-policy'}>Privacy & Policy</Link>
 		  </Stack>
 		</Container>
   

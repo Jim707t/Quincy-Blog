@@ -35,6 +35,8 @@ export async function getStaticProps() {
 
 export default function Home({posts, index}:{posts: any, index: number}) {
 
+  const recentPosts = posts.slice(0, 6);
+
   return (
     <Layout>
       <Head>
@@ -43,7 +45,7 @@ export default function Home({posts, index}:{posts: any, index: number}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <main>
-      <Hero key={index} posts={posts} index={0} />
+      <Hero key={index} posts={recentPosts} index={0} />
     </main>
     </Layout>
   )
