@@ -12,7 +12,8 @@ The photons of lights are incredibly small and have no mass or electrical charge
 <br><br>
 Another stuff that makes teleportation impossible is the conservation of energy. To teleport an object, it would have to be disassembled at its original place and then reassembled at its destination. This process would require a significant amount of energy, and the conservation of energy principle dictates that this energy cannot be created or destroyed. It would have to come from somewhere, and it is unclear where this energy would come from in the case of teleportation.
 <br><br>
-Even by these limitations, some physicists have proposed ways in which teleportation could potentially be achieved. 
+Even by these limitations, some physicists have proposed ways in which teleportation could potentially be achieved.
+<br> 
 1 ) The concept of wormholes, which are theoretical shortcuts through space-time that could potentially allow for faster-than-light travel.
 <br>
 2) Quantum entanglement, a phenomenon in which two particles become linked and can instantaneously affect each other's behavior, even if they are separated by large distances. However, these ideas are still purely theoretical and have not been demonstrated to be possible in practice.
