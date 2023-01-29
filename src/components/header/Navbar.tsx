@@ -136,7 +136,7 @@ const MobileNav = () => {
       as="header"
       position="fixed" 
       w="100%"
-      mt={55}
+      mt={20}
       bg={useColorModeValue('white', 'gray.800')}
       p={4}
       display={{ md: 'none' }}>
