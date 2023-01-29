@@ -17,7 +17,6 @@ export default function Post(){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <Container pt={40} pb={20} maxW={'4xl'}>
-        
        <br></br>
        <br></br>
         <Box>

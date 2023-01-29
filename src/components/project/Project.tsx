@@ -11,8 +11,9 @@ export default function Safu({posts, index}:{posts: any, index: number}) {
       </Heading>
       <Divider marginTop="5" mb={10} />
       
-         <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(1, 1fr)', xl: 'repeat(2, 1fr)' }} gap={6} px={6}>
-             <PCard key={index} posts={posts} />
+        <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(1, 1fr)', xl: 'repeat(2, 1fr)' }} gap={6} px={6}>
+             {/* <PCard key={index} posts={posts} /> */}
+             <Heading pl={50} pb={240} > Nothing yet!</Heading>
         </Grid>
 
     </Container>
