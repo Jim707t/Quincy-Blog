@@ -9,7 +9,7 @@ import {
 import { BsGithub, BsInstagram, BsMastodon, BsReddit, BsTwitter } from 'react-icons/bs'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
-export default function about() {
+export default function Link() {
   return (
     <>
     <List spacing={3}>
