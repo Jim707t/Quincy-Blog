@@ -10,7 +10,7 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import data from '../../data/data.json'
-import Link from '../components/link/Link'
+import SomeLink from '../components/link/Link'
 
 export default function about() {
   return (
@@ -32,7 +32,7 @@ export default function about() {
       </Text>
      </Box>
       <VStack p={5}>
-   <Link />
+   <SomeLink />
 </VStack>
 
     </Container>
