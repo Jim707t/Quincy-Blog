@@ -14,7 +14,7 @@ Another stuff that makes Teleportation impossible is the law of conservation of 
 <br><br>
 Even by these limitations, some physicists have proposed ways in which Teleportation could potentially be achieved.
 
-<br><br>   
+ 
   1. The concept of wormholes, which are theoretical shortcuts through space-time that could potentially allow for faster-than-light travel.
   <br>
   2. Quantum entanglement, a phenomenon in which two particles become linked and can instantaneously affect each other's behavior, even if they are separated by   large distances. However, these ideas are still purely theoretical and have not been demonstrated to be possible in practice.
