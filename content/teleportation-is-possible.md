@@ -16,7 +16,7 @@ Even by these limitations, some physicists have proposed ways in which Teleporta
 
  
   - The concept of wormholes, which are theoretical shortcuts through space-time that could potentially allow for faster-than-light travel.
-  <br>
+  
   - Quantum entanglement, a phenomenon in which two particles become linked and can instantaneously affect each other's behavior, even if they are separated by   large distances. However, these ideas are still purely theoretical and have not been demonstrated to be possible in practice.
 <br><br>
 
