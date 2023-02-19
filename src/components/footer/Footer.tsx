@@ -75,7 +75,7 @@ import { BsGithub } from 'react-icons/bs';
 			
 		  <a href="/">
               <Image
-              src={useColorModeValue('https://gateway.pinata.cloud/ipfs/QmNRvWSfgSFF28J95QZGJcxXNQaSEt53LtEc3TKtqSJS1X/Jim_Quincy_Logo_noir.jpg', 'https://gateway.pinata.cloud/ipfs/QmNRvWSfgSFF28J95QZGJcxXNQaSEt53LtEc3TKtqSJS1X/Jim_Quincy_Logo_blanc.png')}
+              src={useColorModeValue('/assets/jim_quincy_Logo_noir.png', '/assets/jim_quincy_Logo_blanc.png')}
               alt="image"
               height={50}
               width={79}
