@@ -26,9 +26,12 @@ export default function about() {
         About me
       </Heading>
       <Divider marginTop="5" />
-      <Box margin="auto" display="flex" justifyContent="center" p={{base: 10, md:20}}>
+      <Box margin="auto" display="flex" justifyContent="center" p={{base: 10, md:25}}>
       <Text>
-      {data.about.text}
+      {data.about.intro}
+      <br></br>
+      <br></br>
+      {data.about.concl}
       </Text>
      </Box>
       <VStack p={5}>
