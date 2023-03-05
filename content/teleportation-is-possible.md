@@ -13,11 +13,10 @@ The photons of lights are incredibly small and have no mass or electrical charge
 Another stuff that makes Teleportation impossible is the law of conservation of energy. To teleport an object, it would have to be disassembled at its original place and then reassembled at its destination. This process would require a significant amount of energy, and the law of conservation of energy principle dictates that this energy cannot be created or destroyed. should be "it would have to come from somewhere, and it is unclear where this energy would come from in the case of Teleportation.
 <br><br>
 Even by these limitations, some physicists have proposed ways in which Teleportation could potentially be achieved.
-
- 
-  - The concept of wormholes, which are theoretical shortcuts through space-time that could potentially allow for faster-than-light travel.
+<br>
+  1- The concept of wormholes, which are theoretical shortcuts through space-time that could potentially allow for faster-than-light travel.
   
-  - Quantum entanglement, a phenomenon in which two particles become linked and can instantaneously affect each other's behavior, even if they are separated by   large distances. However, these ideas are still purely theoretical and have not been demonstrated to be possible in practice.
+  2- Quantum entanglement, a phenomenon in which two particles become linked and can instantaneously affect each other's behavior, even if they are separated by   large distances. However, these ideas are still purely theoretical and have not been demonstrated to be possible in practice.
 <br><br>
 
-While the idea of teleportation may be exciting , it is currently impossible according to our current understanding of the laws of physics. But we don't knows what the future holds maybe one day we'll figure out a way to overcome these limitations and make Teleportation a reality. Until then, I'll just have to stick to more conventional modes of transportation.
+Teleportation may be exciting , it is currently impossible according to our current understanding of the laws of physics. But we don't knows what the future holds maybe one day we'll figure out a way to overcome these limitations and make Teleportation a reality. Until then, I'll just have to stick to more conventional modes of transportation.
