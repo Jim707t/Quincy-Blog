@@ -1,7 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Head from 'next/head';
-import { Box, Container, Heading } from '@chakra-ui/react';
+import { Box,
+         Container, 
+         Heading,
+         useColorModeValue,
+         } from '@chakra-ui/react';
 
 export default function Post() {
   return (
@@ -21,6 +25,9 @@ export default function Post() {
         <meta name="twitter:image" content="https://jimquincy.tech/twitter-image.png" />
         <meta name="twitter:creator" content="@jimquincy" />
       </Head>
+      <Box
+		    bg={useColorModeValue('gray.50', 'gray.800')}
+		    color={useColorModeValue('gray.700', 'gray.200')}>
       <Container pt={40} pb={20} maxW="4xl">
         <Heading as="h1" size="xl" mb={6}>
           Privacy &amp; Policy
@@ -65,7 +72,8 @@ export default function Post() {
           You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers respective websites.
         </p>
       </Box>
-     </Container>
+      </Container>
+     </Box>
     </Layout>
   )
 }

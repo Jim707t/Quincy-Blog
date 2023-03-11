@@ -8,6 +8,7 @@ import {
   Container,
   Box,
   VStack,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import data from '../../data/data.json';
 import SomeLink from '../components/link/Link';
@@ -33,6 +34,9 @@ export default function About() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Layout>
+      <Box
+		    bg={useColorModeValue('gray.50', 'gray.800')}
+		    color={useColorModeValue('gray.700', 'gray.200')}>
         <Container maxW={'6xl'} pt="20">
           <Heading
             as="h1"
@@ -59,7 +63,8 @@ export default function About() {
           <VStack p={5}>
             <SomeLink />
           </VStack>
-        </Container>
+         </Container>
+        </Box>
       </Layout>
     </>
   );
