@@ -20,7 +20,7 @@ export default function Hero({posts, index}:{posts: any, index: number}) {
   return (
 
     <Box
-		  bg={useColorModeValue('gray.50', 'gray.900')}
+		  bg={useColorModeValue('gray.50', 'gray.700')}
 		  color={useColorModeValue('gray.700', 'gray.200')}>
 
       <Container maxW={'3xl'}>
