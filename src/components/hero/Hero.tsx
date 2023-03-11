@@ -6,6 +6,7 @@ import {
   Stack,
   Grid,
   Center,
+  useColorModeValue,
 } from '@chakra-ui/react';
 
 import { FaRssSquare } from "react-icons/fa";
@@ -18,7 +19,9 @@ import data from '../../../data/data.json';
 export default function Hero({posts, index}:{posts: any, index: number}) {
   return (
 
-    <>
+    <Box
+		  bg={useColorModeValue('gray.50', 'gray.900')}
+		  color={useColorModeValue('gray.700', 'gray.200')}>
 
       <Container maxW={'3xl'}>
 
@@ -62,6 +65,6 @@ export default function Hero({posts, index}:{posts: any, index: number}) {
            <Card key={index} posts={posts}/>
         </Grid>
       </Box>
-    </>
+    </Box>
   );
 }

@@ -10,6 +10,7 @@ import {
   Container,
   Heading,
   Divider,
+  useColorModeValue,
 } from '@chakra-ui/react';
 
 type Frontmatter = {
@@ -81,13 +82,17 @@ export default function Post({ frontmatter, slug, content }: Props) {
         <meta name="twitter:description" content={subtitle} />
         <meta name="twitter:image" content={image} />
       </Head>
-      <Container pt={40} pb={20} maxW={'4xl'}>
-        <Heading as="h1" size="xl" px={{ base: 4, md: 4 }}>
-          {title}
-        </Heading>
-        <Divider marginTop="5" mb={30} />
-        {renderedContent}
-      </Container>
+      <Box
+		   bg={useColorModeValue('gray.50', 'gray.900')}
+		   color={useColorModeValue('gray.700', 'gray.200')}>
+        <Container pt={40} pb={20} maxW={'4xl'}>
+          <Heading as="h1" size="xl" px={{ base: 4, md: 4 }}>
+           {title}
+          </Heading>
+          <Divider marginTop="5" mb={30} />
+          {renderedContent}
+        </Container>
+      </Box>
     </Layout>
   );
 }

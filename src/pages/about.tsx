@@ -15,7 +15,7 @@ import SomeLink from '../components/link/Link';
 export default function About() {
   const pageTitle = 'About | jimquincy.tech';
   const pageDescription =
-    "I'm Jim, a passionate programmer who loves everything related to technology, especially decentralization and machine learning algorithms.";
+    "I'm Jim, I have particular interest in math, decentralization, and the many fascinating ways in which machines can learn and adapt. I've been tinkering with computers and coding since I was a teenager, and over the years I've become increasingly fascinated by its seemingly endless possibilities.";
 
   return (
     <>

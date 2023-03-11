@@ -45,7 +45,7 @@ export async function getStaticProps() {
 
 export default function Blog({posts}: BlogProps) {
   const siteTitle = 'Jim Quincy\'s Blog'
-  const siteDescription = 'Welcome to my blog where I write about my passion for programming and technology, especially the technology of decentralisation and algorithms that learn.'
+  const siteDescription = "I desire to percentage my reports and insights with others who're inquisitive about exploring those fields as well."
 
   return (
     <Layout>

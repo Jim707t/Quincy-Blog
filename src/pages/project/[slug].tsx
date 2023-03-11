@@ -5,7 +5,14 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Layout from '../../components/Layout'
 import Head from 'next/head'
-import { Box, Text, Container, Divider, Heading } from '@chakra-ui/react'
+import { 
+  Box, 
+  Text, 
+  Container, 
+  Divider, 
+  Heading, 
+  useColorModeValue,
+} from '@chakra-ui/react'
 
 interface Frontmatter {
   title: string;
@@ -67,18 +74,22 @@ export default function Post({ frontmatter: { title, date, description, cover_im
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={cover_image} />
       </Head>
-      <Container pt={40} pb={20} maxW={'4xl'}>
-        <Heading as="h1" size="xl" px={{ base: 4, md: 4 }}>
+      <Box
+		   bg={useColorModeValue('gray.50', 'gray.900')}
+		   color={useColorModeValue('gray.700', 'gray.200')}>
+       <Container pt={40} pb={20} maxW={'4xl'}>
+         <Heading as="h1" size="xl" px={{ base: 4, md: 4 }}>
           {title}
-        </Heading>
-        <Text fontSize="xl" color="gray.500" mb={2} px={{ base: 4, md: 4 }}>
+         </Heading>
+         <Text fontSize="xl" color="gray.500" mb={2} px={{ base: 4, md: 4 }}>
           {date}
-        </Text>
-        <Divider marginTop="5" />
-        <Box mx={0} display="flex" justifyContent="center" p={3}
-          dangerouslySetInnerHTML={{ __html: marked(content) }}>
-        </Box>
-      </Container>
+         </Text>
+         <Divider marginTop="5" />
+          <Box mx={0} display="flex" justifyContent="center" p={3}
+            dangerouslySetInnerHTML={{ __html: marked(content) }}>
+          </Box>
+        </Container>
+      </Box>
     </Layout>
   )
 }

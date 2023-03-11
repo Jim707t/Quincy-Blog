@@ -1,5 +1,5 @@
 
-# <p align="center">Personal Blog</p>
+# Personal Blog
   
 My personal blog website, powered by Next.js and styled with Chakra UI.
 
