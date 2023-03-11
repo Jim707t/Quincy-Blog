@@ -1,6 +1,11 @@
-import React from 'react'
-import Card from '../card/Card'
-import { Container, Divider, Grid, Heading } from '@chakra-ui/react'
+import React from 'react';
+import Card from '../card/Card';
+
+import { 
+  Container,
+   Divider, 
+   Grid, 
+   Heading } from '@chakra-ui/react';
   
 
 export default function Safu({posts, index}:{posts: any, index: number}) {

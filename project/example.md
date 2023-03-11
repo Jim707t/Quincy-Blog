@@ -3,6 +3,10 @@ cover_image: 'https://geekforthewin.com/wp-content/uploads/2019/11/Best-Sci-Fi-A
 tag: "tag"
 title: "Just an test title"
 description: "Just an description"
+keywords: 
+  - example
+  - example
+  - example  
 date: "02 Jul, 2022"
 ---
 

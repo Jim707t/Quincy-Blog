@@ -5,8 +5,8 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
-    <GoogleAnalytics trackPageViews={{ ignoreHashChange: true }} />
-    <Component {...pageProps} />
+      <GoogleAnalytics trackPageViews={{ ignoreHashChange: true }} />
+      <Component {...pageProps} />
     </ChakraProvider>
   ) 
 }

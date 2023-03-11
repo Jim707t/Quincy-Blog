@@ -29,6 +29,7 @@ export default function Card({posts}: {posts: any}) {
         mb={50}
         p={6}
         overflow={'hidden'}>
+
         <Stack>
           <Text
             color={'blue.300'}
@@ -65,6 +66,7 @@ export default function Card({posts}: {posts: any}) {
             color: 'blue.300',
           }}>  Read More </Button>
         </Stack>
+        
       </Box>
     
      ))}

@@ -1,7 +1,12 @@
 ---
+image: "/assets/default-image.jpg"
 tag: "Philosophy"
 title: "What is freedom for me?"
 subtitle: "Freedom is a complex and often contradictory concept."
+keywords:
+  - Freedom
+  - Philosophy
+  - Stoicism  
 date: "21 Jul, 2022"
 ---
 

@@ -1,8 +1,13 @@
 ---
+image: "/assets/default-image.jpg"
 tag: "Artificial Intelligence"
 title: 'Unlock the full potential of ChatGPT with "step by step approach"'
 subtitle: |
   I explore a step-by-step approach to working with ChatGPT that can improve the accuracy and completeness of its responses. By developing a practice that emphasizes planning, explicit instruction and caution.
+keywords: 
+  - Artificial intelligence
+  - ChatGPT
+  - Tricks
 date: "18 Feb, 2023"
 ---
 

@@ -1,7 +1,12 @@
 ---
+image: "/assets/default-image.jpg"
 tag: "Science"
 title: "Rules of the different dimensions"
 subtitle: "I try to explain what i learned about dimension."
+keywords: 
+  - Dimensions
+  - Science
+  - Theory
 date: "02 Jul, 2022"
 ---
 

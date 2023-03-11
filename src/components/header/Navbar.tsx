@@ -7,7 +7,6 @@ import {
   ButtonProps,
   Stack,
   Collapse,
-  Icon,
   Link,
   Popover,
   PopoverTrigger,
@@ -17,15 +16,21 @@ import {
   useDisclosure,
   Image,
 } from '@chakra-ui/react';
+
 import {
   HamburgerIcon,
   CloseIcon,
-  ChevronRightIcon,
 } from '@chakra-ui/icons';
 
-import { BsSun, BsMoonStarsFill } from 'react-icons/bs'
+import { 
+  BsSun, 
+  BsMoonStarsFill } from 'react-icons/bs';
 
-export default function WithSubnavigation(props: ButtonProps) {
+
+
+
+export default function Navbar(props: ButtonProps) {
+
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 

@@ -1,7 +1,12 @@
 ---
+image: "/assets/default-image.jpg"
 tag: "Science"
 title: "Teleportation is possible?"
 subtitle: "I try to explain what i learned about Teleportation."
+keywords: 
+  - Teleportation
+  - Science
+  - Theory  
 date: "25 Jun, 2022"
 ---
 

@@ -1,7 +1,12 @@
 ---
+image: "/assets/default-image.jpg"
 tag: "Retrospection"
 title: "Looking back on the year 2022 month by month"
 subtitle: "I decided to look back on the year to share MY thoughts and experiences from it."
+keywords: 
+  - Retrospection
+  - 2022
+  - begin
 date: "26 Dec, 2022"
 ---
 

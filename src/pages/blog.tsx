@@ -7,6 +7,16 @@ import matter from  'gray-matter'
 import { sortPost } from '../utils/sortPost'
 import Safu from '../components/safu/Safu'
 
+interface BlogProps {
+  posts: {
+    slug: string;
+    frontmatter: {
+      title: string;
+      date: string;
+      excerpt: string;
+    }
+  }[];
+}
 
 export async function getStaticProps() {
   // Read the contents of the 'content' directory
@@ -33,17 +43,29 @@ export async function getStaticProps() {
   }
 }
 
-export default function blog({posts, index}:{posts: any, index: number}) {
+export default function Blog({posts}: BlogProps) {
+  const siteTitle = 'Jim Quincy\'s Blog'
+  const siteDescription = 'Welcome to my blog where I write about my passion for programming and technology, especially the technology of decentralisation and algorithms that learn.'
+
   return (
     <Layout>
-    <Head>
-        <title>Blog | jimquincy.tech</title>
-        <meta name="description" content="Jim Quincy's blog post" />
+      <Head>
+        <title>{siteTitle}</title>
+        <meta name="description" content={siteDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </Head>
-    <main>
-    <Safu key={index} posts={posts} index={0} />
-    </main>
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jimquincy.tech/blog" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={siteDescription} />
+        <meta name="twitter:site" content="@jimquincy" />
+        <meta name="twitter:creator" content="@jimquincy" />
+      </Head>
+      <main>
+        <Safu posts={posts} index={0} />
+      </main>
     </Layout>
   )
 }

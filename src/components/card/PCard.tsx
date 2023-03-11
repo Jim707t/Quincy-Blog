@@ -22,6 +22,7 @@ import {
 
 
       <Center py={6} key={index}>
+
         <Stack
           borderWidth="1px"
           borderRadius="lg"
@@ -86,6 +87,7 @@ import {
             </Stack>
           </Stack>
         </Stack>
+        
       </Center>
 
    ))}
