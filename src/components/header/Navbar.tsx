@@ -70,7 +70,7 @@ export default function Navbar(props: ButtonProps) {
               <a href="/">
               <Image
               src={useColorModeValue('/assets/jim_quincy_Logo_noir.png', '/assets/jim_quincy_Logo_blanc.png')}
-              alt="Jim QUincy Logo"
+              alt="Jim Quincy"
               height={65}
               width={99}
               />
